@@ -1,11 +1,10 @@
-# Pizza-sales-insights
-# 🍕 Pizza Sales Analysis | SQL + Power BI – April 2025
+#  Pizza Sales Analysis | SQL + Power BI – April 2025
 
 This project presents a complete analysis of a pizza sales dataset using SQL Server and Power BI. With over 48,000 records, it explores time-based trends, customer preferences, ingredient usage, and revenue patterns. The Power BI dashboard delivers dynamic, interactive insights into pizza sales performance.
 
 ---
 
-## 🔍 Project Objective
+##  Project Objective
 
 - Analyze pizza sales data to identify key business insights.
 - Answer business questions using SQL queries.
@@ -14,7 +13,7 @@ This project presents a complete analysis of a pizza sales dataset using SQL Ser
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 - **SQL Server** – Data exploration and analysis
 - **Power BI** – Data visualization and dashboard creation
@@ -22,21 +21,21 @@ This project presents a complete analysis of a pizza sales dataset using SQL Ser
 
 ---
 
-## 📈 Key Insights from SQL Analysis
+##  Key Insights from SQL Analysis
 
 | Insight | Value |
 |--------|-------|
-| 📅 Most Active Hour | 12 PM (6.5K+ orders) |
-| 🍕 Top Pizza Category | Classic (14.5K+ orders) |
-| 💸 Total Revenue | Calculated using `SUM(total_price)` |
-| 📊 Avg Order Value | Calculated using total revenue / distinct orders |
-| 🔢 Unique Pizza Combinations | 32 (name + ingredients) |
-| 🕒 Peak Sales Month | July |
-| 📉 Least Sales Month | October |
+|  Most Active Hour | 12 PM (6.5K+ orders) |
+|  Top Pizza Category | Classic (14.5K+ orders) |
+|  Total Revenue | Calculated using `SUM(total_price)` |
+|  Avg Order Value | Calculated using total revenue / distinct orders |
+|  Unique Pizza Combinations | 32 (name + ingredients) |
+|  Peak Sales Month | July |
+|  Least Sales Month | October |
 
 ---
 
-## 📊 Power BI Dashboard Overview
+##  Power BI Dashboard Overview
 
 The dashboard visualizes critical trends and answers business-focused questions such as:
 
@@ -69,7 +68,7 @@ The dashboard visualizes critical trends and answers business-focused questions 
 
 ---
 
-## 🧹 Data Cleaning & Transformation
+##  Data Cleaning & Transformation
 
 - Removed duplicate records to ensure data accuracy and consistency.
 - Created a new table pizza_single_ingredients by transforming the pizza_ingredients column:
@@ -86,7 +85,7 @@ The dashboard visualizes critical trends and answers business-focused questions 
 
 ---
 
-## 🔍 Extended SQL Analysis (Own Questions)
+##  Extended SQL Analysis (Own Questions)
 
 In addition to basic metrics, I explored deeper questions such as:
 
@@ -102,12 +101,12 @@ In addition to basic metrics, I explored deeper questions such as:
 
 ---
 
-## 📁 File Structure
+##  File Structure
 pizza_sales.csv
 pizza report-1.pbix
 Pizza sales .sql
 
-## 📌 Conclusion
+##  Conclusion
 
 This project was a great hands-on experience in:
 
@@ -117,13 +116,13 @@ This project was a great hands-on experience in:
 
 ---
 
-## 📬 Contact
+##  Contact
 
 **Haritha S**  
-📧 haritha6104@gmail.com  
-📱 +91 9499979700  
+mail: haritha6104@gmail.com  
+contact: +91 9499979700  
 
 ---
 
-⭐ *If you found this project insightful, feel free to star the repo and follow for more analytics projects!*
+ *If you found this project insightful, feel free to star the repo and follow for more analytics projects!*
 
