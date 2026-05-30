@@ -1,128 +1,112 @@
-#  Pizza Sales Analysis | SQL + Power BI – April 2025
+# Pizza Sales Analysis – SQL + Power BI (April 2025)
 
-This project presents a complete analysis of a pizza sales dataset using SQL Server and Power BI. With over 48,000 records, it explores time-based trends, customer preferences, ingredient usage, and revenue patterns. The Power BI dashboard delivers dynamic, interactive insights into pizza sales performance.
-
----
-
-##  Project Objective
-
-- Analyze pizza sales data to identify key business insights.
-- Answer business questions using SQL queries.
-- Design and publish an interactive Power BI dashboard for stakeholders.
-- Showcase end-to-end data analysis skills including cleaning, transformation, modeling, and storytelling.
+![SQL Server](https://img.shields.io/badge/SQL-Server-orange.svg)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow.svg)
+![DAX](https://img.shields.io/badge/DAX-Analytics-blue.svg)
+![Data Analysis](https://img.shields.io/badge/Data-Analytics-red.svg)
+![Visualization](https://img.shields.io/badge/Data-Visualization-blueviolet.svg)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)
 
 ---
 
-##  Tools Used
+## Project Overview
+This project presents an end-to-end analysis of a pizza sales dataset using **SQL Server and Power BI**.  
+With over **48,000 records**, it explores sales trends, customer preferences, ingredient usage, and revenue patterns.
 
-- **SQL Server** – Data exploration and analysis
-- **Power BI** – Data visualization and dashboard creation
-- **DAX** – Calculated fields and measures
+The Power BI dashboard provides interactive insights to support data-driven decision-making in the food and beverage industry.
 
 ---
 
-##  Key Insights from SQL Analysis
+## Project Objective
+- Analyze pizza sales data to extract business insights  
+- Use SQL queries for data exploration and analysis  
+- Build an interactive Power BI dashboard  
+- Apply end-to-end analytics workflow (cleaning → transformation → visualization → storytelling)  
+
+---
+
+## Tools Used
+- SQL Server – Data extraction and analysis  
+- Power BI – Dashboard development  
+- DAX – Measures and calculated columns  
+- Excel – Data handling and validation  
+
+---
+
+## Key Insights from SQL Analysis
 
 | Insight | Value |
-|--------|-------|
-|  Most Active Hour | 12 PM (6.5K+ orders) |
-|  Top Pizza Category | Classic (14.5K+ orders) |
-|  Total Revenue | Calculated using `SUM(total_price)` |
-|  Avg Order Value | Calculated using total revenue / distinct orders |
-|  Unique Pizza Combinations | 32 (name + ingredients) |
-|  Peak Sales Month | July |
-|  Least Sales Month | October |
+|--------|------|
+| Most Active Hour | 12 PM (6.5K+ orders) |
+| Top Pizza Category | Classic (14.5K+ orders) |
+| Peak Sales Month | July |
+| Lowest Sales Month | October |
+| Unique Pizza Combinations | 32 |
+| Average Order Value | Revenue / Orders |
 
 ---
 
-##  Power BI Dashboard Overview
+## Power BI Dashboard Overview
 
-The dashboard visualizes critical trends and answers business-focused questions such as:
+The dashboard visualizes key business metrics and answers important questions:
 
-### 1. **Peak Order Time (Hourly Trend)**
-- **Chart**: Clustered Column Chart
-
-### 2. **Most & Least Sold Pizza Category**
-- **Chart**: Line Chart
-
-### 3. **Total Unique Pizza**
-- **Chart**: Card (KPI)
-
-### 4. **Best and Worst Sales Months**
-- **Chart**: Stacked Bar Chart
-
-### 5. **Monthly Revenue with Percentage**
-- **Chart**: Line + Stacked Column Chart
-
-### 6. **Revenue by Day of Week**
-- **Chart**: Line + Stacked Column Chart
-
-### 7. **Top Pizza Ingredient Combinations**
-- **Chart**: Stacked Bar Chart
-
-### 8. **Most Frequently Used Ingredients**
-- **Chart**: Clustered Bar Chart
-
-### 9. **Sales by Pizza Size**
-- **Chart**: Clustered Column Chart
+- Peak Order Time (Hourly Trend Analysis)  
+- Best & Worst Performing Pizza Categories  
+- Monthly Revenue Trends  
+- Revenue by Day of Week  
+- Ingredient Usage Analysis  
+- Pizza Size Preferences  
+- Top Selling Combinations  
 
 ---
 
-##  Data Cleaning & Transformation
+## Data Cleaning & Transformation
 
-- Removed duplicate records to ensure data accuracy and consistency.
-- Created a new table pizza_single_ingredients by transforming the pizza_ingredients column:
-   * Selected relevant columns: pizza_id, pizza_category.
-   * Split the pizza_ingredients column into individual ingredients — one per row — to enable detailed ingredient-level analysis.
-  
-- Enhanced the pizza_sales table with time-based features to support temporal analysis:
-  
-  * order_hour: Extracted from the order timestamp to analyze peak sales hours.
-  * order_month: Extracted to observe monthly sales trends.
-  * order_day: Extracted to evaluate daily sales performance.
-    
-- Applied string manipulation and tokenization using `STRING_SPLIT()`.
+- Removed duplicate records for data consistency  
+- Split pizza ingredients into individual rows using `STRING_SPLIT()`  
+- Created time-based features:
+  - `order_hour`
+  - `order_month`
+  - `order_day`
+- Enhanced dataset for time-series and ingredient-level analysis  
 
 ---
 
-##  Extended SQL Analysis (Own Questions)
+## Extended SQL Analysis
 
-In addition to basic metrics, I explored deeper questions such as:
+Additional business questions explored:
 
-- Most preferred order time?
-- Highest & lowest-selling pizza categories?
-- Total unique pizzas (by name + ingredients)?
-- Which month has the most/least sales?
-- Revenue contribution per month and day of the week?
-- Most used ingredients?
-- Most common pizza size?
-
-> All insights were derived from handcrafted SQL queries without relying on pre-built reports or tools.
+- Peak order timings  
+- Best and worst-performing pizza categories  
+- Monthly and seasonal sales trends  
+- Ingredient popularity analysis  
+- Revenue distribution across time periods  
+- Pizza size preference patterns  
 
 ---
 
-##  File Structure
+## File Structure
+
+```text
 pizza_sales.csv
-pizza report-1.pbix
-Pizza sales .sql
-
-##  Conclusion
-
-This project was a great hands-on experience in:
-
-- Translating raw transactional data into business insights.
-- Crafting insightful SQL queries for exploratory and diagnostic analysis.
-- Building a compelling Power BI dashboard that can aid real-world decision-making in food and beverage retail.
+pizza_sales.sql
+pizza_report.pbix
+```
 
 ---
 
-##  Contact
+## Conclusion
+This project demonstrates how raw transactional data can be transformed into meaningful business insights using SQL and Power BI. It highlights skills in:
 
-**Haritha S**  
-mail: haritha6104@gmail.com  
-contact: +91 9499979700  
+- Data cleaning and transformation  
+- SQL-based analytical querying  
+- Data visualization and dashboard design  
+- Business storytelling using data  
 
 ---
 
- *If you found this project insightful, feel free to star the repo and follow for more analytics projects!*
+## Author
+**Haritha S**
+
+**Tools Used:** SQL Server, Power BI, DAX, Excel, Data Visualization
 
